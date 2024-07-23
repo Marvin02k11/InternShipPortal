@@ -16,11 +16,11 @@ const Login = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        credentials: 'include', // Ensure credentials are included
+        credentials: 'include', 
         body: JSON.stringify(credentials),
       });
       const data = await response.json();
-      if (response.ok) { // Use response.ok to check for successful status
+      if (response.ok) { 
         setMessage("Login successful");
         navigate('/home');
       } else {
