@@ -12,7 +12,7 @@ const InternshipApplication = require('./models/Application');
 
 const app = express();
 const mongoURI = process.env.MONGOURI;
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3001;
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY || 'Mynameismarvin'; 
 
 app.use(cors({
